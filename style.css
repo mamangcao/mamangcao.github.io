@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: black;
+    color: white;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    padding: 10px 10%;
+
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 140px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative ;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+
+}
+
+.header-text
+{
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+}
+
+.header-text h1
+{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.header-text h1 span
+{
+    color: #ff4057;
+}
+
+.header-text p span
+{
+    color: #ff4057;
+}
+
+/* ABOUT ME */
+
+#about
+{
+    padding: 80px 0;
+    color: white;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1
+{
+    flex-basis: 35%;
+}
+
+.about-col-1 img
+{
+    width: 100%;
+    border-radius: 50% 20% / 10% 40%;
+    border: groove 1em #ff4057;
+    transition: transform 0.5s;
+}
+.about-col-1 img:hover
+{
+    transform: scale(1.1);
+}
+
+.about-col-2
+{
+    flex-basis: 60%;
+
+}
+
+.sub-title
+{
+    font-size: 60px;
+    font-weight: 600;
+    color: #ff4057;
+}
+
+.sub-title span
+{
+    color: white;
+}
+
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff4057;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 1s;
+}
+
+.tab-links.active-link::after
+{
+    width: 50%;
+
+}
+
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+    transition: transform 0.5s;
+}
+.tab-contents ul li:hover
+{
+    transform: scale(1.1);
+}
+
+.tab-contents ul li span
+{
+    color: #FFB6C1;
+    font-size: 14px;
+}
+
+.tab-contents 
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+/* END OF CSS FOR ABOUT ME */
+
+/* CSS FOR MY SERVICES */
+#services
+{
+    padding: 30px 0;
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div
+{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover
+{
+    background: #ff4057;
+    transform: scale(1.1);
+}
+/* END OF SERVICES */
+
+/* CONTACT ME */
+#contact
+{
+    padding: 80px 0;
+}
+.contact-details
+{
+    flex-basis: 35%;
+}
+.contact-details p
+{
+    margin-top: 30px;
+}
+.contact-details p i
+{
+    color: #ff4057;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons
+{
+    margin-top: 30px;
+}
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a i
+{
+    color: #ff4057;
+}
+.social-icons a:hover
+{
+    color: #ff4057;
+    transform: translateY(-5px);
+}
+
+.btn
+{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff4057;
+    background: #ff4057;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover
+{
+    background-color: #df0d25;
+}
+/* END OF CONTACT ME */
+
+    nav .fas
+    {
+        display: none;
+    }
+
+/* MAKE THE WEBSITE RESPONSIVE */
+@media only screen and (max-width: 600px)
+{
+    #header {
+        background-image: url(assets/phone-background.jpg);
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 20px;
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #ff4057;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 150px;
+        height: 200vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-details p {
+        font-size: 14px;
+    }
+}

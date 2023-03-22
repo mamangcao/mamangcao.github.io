@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abdul Haleem Mamangcao</title>
+    </head>
+    <!-- MY OWN CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/f1c0e4f7c2.js" crossorigin="anonymous"></script>
+    <body>
+        <!-- NAV BAR & BANNER -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#header"><img src="assets/logo.png" class="logo"></a>
+                    <ul id="sidenav">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Resume</a></li>
+                        <i class="fas fa-times" onclick="closenav()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="opennav()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        Hello World! I'm<br>
+                        <span>A</span>bdul <span>H</span>aleem <span>M</span>amangcao</h1> 
+                    <p><span>Web Developer</span> (Laravel + React)</p>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAV BAR & BANNER -->
+        
+        <!-- ABOUT ME -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/Me-2.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">A<span>bout</span> M<span>e</span></h1>
+                        <p>Hi! I'm ABDUL HALEEM Mamangcao, an IT Professional seeking opportunity to
+                            extend my experience, skills, and knowledge. With experience in web development and computer operation.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('training')">Training</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Laravel + React</li>
+                                <li><span>Relational Databases</span><br> PostgreSQL & MySQL</li>
+                                <li><span>Programming Language</span><br> Java, PHP, and Javascript</li>
+                                <li><span>CSS Frameworks</span><br> Tailwind & Material UI</li>
+                                <li><span>Computer Networks</span><br> Routing & Switching</li>
+                                <li><span>Graphic Design</span><br> Adobe Photoshop & Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July 2021 - September 2021</span><br>IT Support Specialist at Ministry of Internal and Local Government</li>
+                                <li><span>November 2020 - December 2020</span><br> IT Support Specialist at Ministry of Internal and Local Government</li>
+                                <li><span>June 2018 - May 2020</span><br> IT Staff at Al-Jalis As-Salih, Inc.</li>
+                                <li><span>January 2018 - May 2018</span><br> Network Engineer Intern at MSU-IIT, Information and Communication Technology Center</li>
+                                <li><span>September 2017 - December 2017</span><br> Project Manager at FabLab Mindanao</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014-2018</span><br>BS in Information Technology at Mindanao State University - Iligan Institute of Technology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="training">
+                            <ul>
+                                <li><span>March 13-17, 2023</span><br>Web Accessibility Audit Training organized by<br>
+                                    ICT Literacy and Competency Development Bureau of DICT Region 10</li>
+                                <li><span>March 20-31, 2023</span><br>Web Development for Web Developers Training organized by<br>
+                                    ICT Literacy and Competency Development Bureau of DICT Region 10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF ABOUT ME -->
+        &nbsp; &nbsp; &nbsp;
+        <!-- MY SERVICES -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">M<span>y Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I have year of experience in Web Development and developed two websites as of the writing. Proficient in Laravel and Reactjs.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-laptop-file"></i>
+                        <h2>Graphic Design</h2>
+                        <p>I have been a freelance graphic designer for several years. I do posters, branding, and web design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF MY SERVICES -->
+        &nbsp; &nbsp; &nbsp;
+        <div id="contact">
+            <div class="container">
+                <div class="contact-details">
+                    <h1 class="sub-title" style="color: white">Contact <span style="color: #ff4057">M</span>e</h1>
+                    <p><i class="fa-solid fa-envelope"></i>abdulhaleem.binjameel@g.msuiit.edu.ph</p>
+                    <p><i class="fa-solid fa-phone"></i>+63 976 3855 932</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/khayri.gg"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/khayri.gg"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/khayri_gg"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://ph.linkedin.com/in/abdulhaleembinjameel"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+        &nbsp;
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidenav = document.getElementById("sidenav");
+
+            function opennav() {
+                sidenav.style.right = "0";
+            }
+            function closenav() {
+                sidenav.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
